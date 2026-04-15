@@ -1,0 +1,11 @@
+## Introduction
+
+Remote Monitoring and Management (RMM) software is widely used by IT administrators to manage endpoints, execute commands, and maintain infrastructure at scale. Platforms such as Datto RMM provide full remote access capabilities through trusted channels, typically over HTTPS, making them a powerful administrative tool.
+
+In recent years, threat actors have increasingly abused these tools to gain stealthy and persistent access to victim systems. This technique, commonly referred to as **RMM abuse**, is part of a broader Living-off-the-Land approach, where legitimate software is used instead of custom malware. Because these agents are trusted and operate similarly to normal administrative activity, they can be difficult to detect.
+
+This trend has been documented by the Cybersecurity and Infrastructure Security Agency in advisory AA23-025A, which highlights the use of remote access tools in phishing campaigns to establish persistence.
+
+In this context, attackers effectively turn legitimate RMM software into an **RMM backdoor**, achieving full remote control through trusted infrastructure.
+
+This report analyzes a malicious sample referred to as **ZoomLure**, which uses a fake Zoom update to deploy a Datto RMM agent and establish persistent remote access.
